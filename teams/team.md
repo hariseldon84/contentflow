@@ -276,3 +276,94 @@ dependencies:
   templates:
     - distribution-plan-tmpl.yaml
 
+# team-fullstack.txt — ContentFlow Role Matrix (v1.0)
+
+[Prompt Architect]
+- Purpose: Design clear, goal-oriented prompts to extract quality responses from AI or human collaborators.
+- Inputs: Strategy briefs, research themes, content needs.
+- Outputs: Structured prompts.
+- Tools: Prompt engineering tools, GPT-4, Anthropic, text editors.
+- KPIs: Prompt Clarity Score ≥ 8/10.
+- Triggers: 3 failed prompts → revisit brief.
+- Collaborates with: Insight Miner, Narrative Strategist.
+
+[Insight Miner]
+- Purpose: Extract key themes, angles, emotional hooks from raw data or responses.
+- Inputs: Prompt outputs, competitive landscape, data sets.
+- Outputs: Insight summaries, hook angles.
+- Tools: LLMs, data tagging sheets, trend analysis.
+- KPIs: 3–5 insights per content brief.
+- Triggers: Insight density < 2 → flag for research expansion.
+- Collaborates with: Prompt Architect, Narrative Strategist.
+
+[Narrative Strategist]
+- Purpose: Convert insights into a compelling narrative flow with beginning, middle, end.
+- Inputs: Insight briefs, content goals.
+- Outputs: Narrative maps, story arcs, tone guides.
+- Tools: Notion, Whimsical, LLMs, tone boards.
+- KPIs: Arc Completion Rate ≥ 95%.
+- Triggers: >20% scripts structurally rewritten → restructure required.
+- Collaborates with: Script Crafter, Visual Composer.
+
+[Script Crafter]
+- Purpose: Write core long-form and short-form content using narrative outlines.
+- Inputs: Narrative maps, prompts, insights.
+- Outputs: Blogs, scripts, captions, email copy.
+- Tools: Google Docs, LLMs, Grammarly, Hemingway.
+- KPIs: First Draft in ≤ 90 mins; Grammar errors < 2%.
+- Triggers: Readability < 60 → escalate.
+- Collaborates with: Platform Tailor, Feedback Synthesizer.
+
+[Platform Tailor]
+- Purpose: Adapt core content into formats for specific platforms (IG, YouTube, LinkedIn, etc).
+- Inputs: Core script, platform templates.
+- Outputs: Versioned content, carousels, reels, shorts.
+- Tools: Canva, Figma, Descript, Later, Notion.
+- KPIs: Format Compliance ≥ 90%.
+- Triggers: Platform drop > 20% → iterate format or hook.
+- Collaborates with: Script Crafter, Engagement Engineer.
+
+[Visual Composer]
+- Purpose: Create visuals aligned with content tone and platform guidelines.
+- Inputs: Scripts, tone boards, content briefs.
+- Outputs: Thumbnails, graphics, social visuals, reels.
+- Tools: Figma, Canva, Midjourney, Photoshop.
+- KPIs: Sync Score ≥ 8/10 (internal creative review).
+- Triggers: 3+ misaligned visuals → rebrief.
+- Collaborates with: Platform Tailor, Narrative Strategist.
+
+[Publishing Operator]
+- Purpose: Schedule, tag, and publish content with SEO and metadata.
+- Inputs: Final content pieces.
+- Outputs: Live content, metadata reports, backlinks.
+- Tools: CMS, WordPress, YouTube Studio, Later, Buffer.
+- KPIs: 98% Publish Accuracy, SEO ≥ 90%.
+- Triggers: Publish error → checklist review.
+- Collaborates with: Distribution Hacker, Engagement Engineer.
+
+[Feedback Synthesizer]
+- Purpose: Analyze performance, collect responses, derive insights.
+- Inputs: Comments, analytics, poll results.
+- Outputs: Feedback briefs, iteration cues.
+- Tools: GA4, Hotjar, platform analytics, surveys.
+- KPIs: Loop Completion ≤ 48 hrs.
+- Triggers: <10% feedback applied → refine synthesis path.
+- Collaborates with: Script Crafter, Insight Miner.
+
+[Engagement Engineer]
+- Purpose: Design hooks, CTAs, and content triggers to increase interaction.
+- Inputs: Content drafts, user psychology inputs.
+- Outputs: CTAs, hooks, captions, end cards.
+- Tools: ChatGPT, Thruuu, Call-to-Action Banks.
+- KPIs: CTR ≥ 5%; Bounce Rate within threshold.
+- Triggers: Drop-off > 25% in 5 sec → rewrite hook.
+- Collaborates with: Platform Tailor, Feedback Synthesizer.
+
+[Distribution Hacker]
+- Purpose: Expand content reach through repurposing, syndication, and partnerships.
+- Inputs: Final content, calendar, target channels.
+- Outputs: Amplified reach, channel-specific variants.
+- Tools: Substack, Mailchimp, Medium, Meta Studio, Zapier.
+- KPIs: Repurposing ≥ 5x; ROI per channel ≥ target.
+- Triggers: ROI dip → test alternate distribution.
+- Collaborates with: Publishing Operator, Engagement Engineer.
